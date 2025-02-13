@@ -35,14 +35,12 @@ struct StartView: View {
                 }
                 .padding()
                 .navigationDestination(isPresented: $navigateToGame) {
-                    ContentView()
+                    GameView()
                 }
             }
         }
     }
 }
-
-
 
 #Preview {
     StartView()
