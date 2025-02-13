@@ -6,13 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		799169442D5DB1580087B4C6 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799169432D5DB1580087B4C6 /* StartView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		7991692F2D5DA4EC0087B4C6 /* Punchie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Punchie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		799169432D5DB1580087B4C6 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		799169412D5DA6140087B4C6 /* Exceptions for "Punchie" folder in "Punchie" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7991692E2D5DA4EB0087B4C6 /* Punchie */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		799169312D5DA4EC0087B4C6 /* Punchie */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				799169412D5DA6140087B4C6 /* Exceptions for "Punchie" folder in "Punchie" target */,
+			);
 			path = Punchie;
 			sourceTree = "<group>";
 		};
@@ -32,6 +50,7 @@
 		799169262D5DA4EB0087B4C6 = {
 			isa = PBXGroup;
 			children = (
+				799169432D5DB1580087B4C6 /* StartView.swift */,
 				799169312D5DA4EC0087B4C6 /* Punchie */,
 				799169302D5DA4EC0087B4C6 /* Products */,
 			);
@@ -119,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799169442D5DB1580087B4C6 /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,11 +275,14 @@
 				DEVELOPMENT_TEAM = P7TRZ5Z7TU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Punchie/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires camera access for motion tracking.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,11 +307,14 @@
 				DEVELOPMENT_TEAM = P7TRZ5Z7TU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Punchie/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires camera access for motion tracking.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

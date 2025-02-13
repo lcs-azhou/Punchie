@@ -8,10 +8,41 @@
 import SwiftUI
 
 struct StartView: View {
+    @State private var navigateToGame = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                Text("Welcome to Boxing Game")
+                    .font(.largeTitle)
+                    .padding()
+
+                Text("Throw punches and improve your reflexes!")
+                    .font(.title2)
+                    .padding()
+
+                Button(action: {
+                    navigateToGame = true
+                }) {
+                    Text("Start Game")
+                        .font(.title)
+                        .bold()
+                        .padding()
+                        .frame(width: 200)
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                }
+                .padding()
+                .navigationDestination(isPresented: $navigateToGame) {
+                    ContentView()
+                }
+            }
+        }
     }
 }
+
+
 
 #Preview {
     StartView()

@@ -11,7 +11,7 @@ import SwiftUI
 struct PunchieApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartView() // Ensure this is the starting view
         }
     }
 }
